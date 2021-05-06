@@ -5,24 +5,22 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1><center>PAGE ADMINISTRATION</center></h1>
-
+ <h1><center>Administration</center></h1>
 	<br><br><br><br>
-
-	<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/index.php">Accueil</a></button>
-	<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/contact.php">Contact</a></button>
-	<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/admin/admin.php">Administration</a></button>
-
-<!--LOCAL
-	 <button type = "button" id="bouton"><a href="index.php">Accueil</a></button>
-	 <button type = "button" id="bouton"><a href="contact.php">Contact</a></button>
-	 <button type = "button" id="bouton"><a href="admin.php">Administration</a></button>-->
-
+ <!--
+		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/index.php"><b>Accueil</b></a></button>
+		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/contact.php"><b>Contact</b></a></button>
+		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/admin/admin.php"><b>Administration</b></a></button>
+-->
+		<button type = "button" id="bouton"><a href="index.php"><b>Accueil</b></a></button>
+		<button type = "button" id="bouton"><a href="contact.php"><b>Contact</b></a></button>
+		<button type = "button" id="bouton"><a href="admin.php"><b>Administration</b></a></button>
  	<br><br><br>
-
  <p>
  	<center>
  		<form action="#" method="post" id="form" name="form" onsubmit="envoiForm()">
+ 			<b>
+ 			<div id="liste">
 			Achille DAV.
 			<input type="checkbox" name="valid" tabindex="2">
 				<br><br>
@@ -55,8 +53,9 @@
 				<br><br>
 			Thibaut DUS.
 			<input type="checkbox" name="valid" tabindex="2">
-				<br><br>
-			<button type="button" value="Sauvegarder">Sauvegarder</button>
+			</b>	<br><br>
+			</div>
+			<button type="button" id="bouton" value="Sauvegarder"><b><a>Sauvegarder</a></b></button>
 		</form>
 	</center>
 </p>
