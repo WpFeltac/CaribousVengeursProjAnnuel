@@ -1,54 +1,104 @@
-html{
-	background-attachment: fixed;
-	
-
-}
-h1
+html
 {
-	color:#FF6D00;;
-	font-style: bold;
-	font-family: Snell Roundhand, cursive;
+	background-attachment: fixed;
+	background-color: transparent;	
+}
+
+.header 
+{
+	font-family: Pacifico, cursive;
+	margin: 0;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 90px;
+	width: 100%;
+	background-color: #009A71;
+	color: white;		
+	border-bottom: solid 2px white;
+	z-index: 1;	
+}
+
+.header h1 
+{
+	margin: 0;
+	margin-left: 50px;
+	margin-top: 10px;
 }
 
 body
 {
+	background-image:url("image/fond.jpg");
 	font-family:Snell Rounhand, cursive;
-	background-image:url('image/fond.jpg');
 	margin: 0;
 	background-repeat:no-repeat;
-
 	position: relative; 
 	top: 0; 
 	left: 0; 
-
 	min-width: 100%;
 	min-height: 100%;
-	background-size: cover;
+	background-size: initial;
 
 }
-a{
-	color:#E83030;
+
+a
+{
+	color: white;
 	text-decoration: none;
 	font-family:Snell Rounhand, cursive;
 }
-#liste{
+
+#liste
+{
 		display: block;
-		border: solid #05C1AA 5px;
-		border-radius:30%;
+		border: solid #145C6F 5px;
 		width: 450px;
 		color: white;
-		background-color: #6CDFC5;
+		background-color: #009A71;
 		opacity: 0.8;
 		font-size: 18px;
 		margin: 25px;
 		padding: 25px;
 		color:#E83030;
 }
-#bouton{
-	background-color: #6CDFC5;
-	border-radius: 40%;
+
+#bouton
+{
+	background-color: #009A71;
 	font-size: 15px;
 	padding: 8px;
-	margin: 4px;
+	margin: 0px;
 	font-family:Snell Rounhand, cursive;
+	border-color: white;
+}
+
+.container
+{
+  background-color: #009A71;
+  width: 30%; 
+  float:left;
+  margin-left: 10px;
+  margin-bottom : 10px;
+}
+
+.container h2
+{
+  text-align : center;
+  color: white;
+}
+
+.containerContent
+{
+  text-align : center;
+  height: 60px;
+  margin: 5px;
+  background-color: #145C6F;
+  opacity: 0.8;
+}
+
+.centerist
+{
+	display: table;
+  	margin: auto;
 }
