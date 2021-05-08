@@ -27,19 +27,22 @@ html
 	margin-top: 10px;
 }
 
-body
+.bg
 {
 	background-image:url("image/fond.jpg");
-	font-family:Snell Rounhand, cursive;
-	margin: 0;
-	background-repeat:no-repeat;
-	position: relative; 
+	background-attachment: scroll;
+	position: fixed;
+	margin: 0; 
 	top: 0; 
 	left: 0; 
-	min-width: 100%;
-	min-height: 100%;
-	background-size: initial;
+	width: 100vw;
+	height: 100vw;
+	z-index: -50;
+}
 
+body
+{
+	font-family:Snell Rounhand, cursive;
 }
 
 a
@@ -67,10 +70,16 @@ a
 {
 	background-color: #009A71;
 	font-size: 15px;
-	padding: 8px;
+	padding: 5px;
 	margin: 0px;
 	font-family:Snell Rounhand, cursive;
 	border-color: white;
+}
+
+.centerist
+{
+	width: 100vw;
+	text-align: center;
 }
 
 .container
@@ -78,7 +87,7 @@ a
   background-color: #009A71;
   width: 30%; 
   float:left;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom : 10px;
 }
 
@@ -97,8 +106,26 @@ a
   opacity: 0.8;
 }
 
-.centerist
+.containerContent h3
 {
-	display: table;
-  	margin: auto;
+	opacity: 1;
+	margin: auto;
+}
+
+.box2 
+{		
+	justify-content: center;
+	padding-right: 0;
+	padding-left: 0; 
+	color: black;
+	position: relative;
+	top: 100px;	
+	left: 0;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contactForm
+{
+	filter: opacity(1);
 }

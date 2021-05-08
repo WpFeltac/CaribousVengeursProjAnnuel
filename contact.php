@@ -13,6 +13,8 @@
 		<div class="header">
 			<h1>Les Caribous Vengeurs - Page de Contact</h1>
 		</div>
+
+		<div class="bg"></div>
 				
 		<br><br><br><br>
 <!--
@@ -30,5 +32,110 @@
 
 		<br>
 
+
+		<div class="box2">
+						
+			<center>
+
+				<section>
+
+					<?php
+
+						if (isset($_POST['envoi']))
+						{	
+							if (!isset($_POST['message']) || $_POST['message']=='') 
+							{
+								echo('Vous avez oublié d\'ins&eacute;rer un message<br>');
+							}
+							else 
+							{
+								mail("hberleur@gmail.com", "Test Formulaire", $_POST["message"]);
+								print "Le message \"".$_POST["message"]."\" a bien été envoyé";
+							}
+
+							// assignation de la variable mail si aucune adresse mail renseignée
+							if (empty($_POST['mail'])) 
+							{
+								echo('Vous n\'avez pas renseigné d\'adresse mail.');
+							}
+						}
+									
+					?>					
+
+					<form action="#" method="post" id="form" onsubmit="" class="contactForm">
+						
+							<input type="text" name="nom" autofocus  placeholder="Nom">*
+
+								<br><br>										
+											
+							Mr  <input type="radio" name="civ">
+							Mme <input type="radio" name="civ">*
+											
+								<br><br>
+
+							<input type="email" name="mail" placeholder="Adresse mail" >*
+
+								<br><br>
+
+							<input type="tel" name="tel"  maxlength="10" placeholder="Téléphone">*
+							
+								<br><br>
+											
+							<center>	Pays
+
+								<select name="pays"  >
+												
+									<option>FR</option>
+									<option>BE</option>
+									<option>ESP</option>
+									<option>RU</option>
+
+								</select>*
+							</center>
+
+								<br>
+
+							<center>
+														
+								Age* :
+
+							</center>
+
+
+							<input type="number" name="age" maxlength="2" placeholder="Age">
+
+								<br><br>
+
+										
+							<textarea name="message" placeholder="Votre message"></textarea>
+
+								<br><br>
+
+
+							J'accepte la conservation des données* <input type="checkbox" name="valid" >
+
+								<br><br>
+																						
+							<input type="submit" name="envoi" onsubmit="">
+
+								<br><br>
+
+					
+							<span style="color: red">
+
+								Les champs marqués d'un * sont obligatoires
+
+									<br>
+							</span>
+
+					</form>
+							
+				</section>
+
+			</center>	
+													
+		</div>
+
 	</body>
+
 </html>
