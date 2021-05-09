@@ -22,19 +22,10 @@
 
 	<br><br><br><br>
 
-<!--
-		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/index.php"><b>Accueil</b></a></button>
-
-		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/contact.php"><b>Contact</b></a></button>
-
-		<button type = "button" id="bouton"><a href="https://www.je-code.com/esgi1/hberleur/annuaire/admin/admin.php"><b>Administration</b></a></button>
--->
-
-		<button type ="button" id="bouton"><a href="index.php"><b>Accueil</b></a></button>
-
-		<button type ="button" id="bouton"><a href="contact.php"><b>Contact</b></a></button>
-
-		<button type ="button" id="bouton"><a href="admin/admin.php"><b>Administration</b></a></button>
+		<a href="https://www.je-code.com/esgi1/hberleur/mosaique/index.php"><button type = "button" id="bouton"><b style="color:white">Accueil</b></button></a>
+		<a href="https://www.je-code.com/esgi1/hberleur/mosaique/contact.php"><button type = "button" id="bouton"><b style="color:white">Contact</b></button></a>
+		<a href="https://www.je-code.com/esgi1/hberleur/mosaique/account/account.php"><button type = "button" id="bouton"><b style="color:white">Mon compte</b></button></a>
+		<a href="https://www.je-code.com/esgi1/hberleur/mosaique/admin/admin.php"><button type = "button" id="bouton"><b style="color:white">Administration</b></button></a>
 
 		<br><br><br>
 
